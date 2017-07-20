@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 
-import "../css/typography.css"
+import "../css/typography.scss"
 
 export default class Template extends React.Component {
   static propTypes = {
@@ -14,10 +14,10 @@ export default class Template extends React.Component {
     return (
       <div>
         <Helmet
-          title="Gatsby Default Starter"
+          title="Practical Cook"
           meta={[
-            { name: "description", content: "Sample" },
-            { name: "keywords", content: "sample, something" },
+            { name: "description", content: "practical cooking resources for at home cooks." },
+            { name: "keywords", content: "cooking, practical, efficient, organise, recipes" },
           ]}
         />
         <div
