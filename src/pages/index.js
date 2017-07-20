@@ -34,7 +34,11 @@ class BlogIndex extends React.Component {
         <h1 className="text-center">Welcome to Practical Cook!</h1>
         <p>Currently in development, this is a place where tips, recipes, equipment guides
         and more will be displayed with a focus on Australian home cooking.</p>
-        <p>If you{"'"}d like to sign up for notification of launch, you can add your email here. We won't
+        <p>Our first article is on...:</p>
+
+
+        <hr />
+      <p>If you{"'"}d like to sign up for notification of launch, you can add your email here. We won't
         give away your email to <strong>anyone at all.</strong></p>
 
         <form name="contact" action="thanks" data-netlify>
