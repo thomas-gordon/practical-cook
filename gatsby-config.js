@@ -1,10 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: "Practical Cook",
+    description: "Tips, recipes, equipment guides and more will be displayed with a focus on Australian home cooking.",
     author: "Thomas Gordon",
   },
   plugins: [
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-feed`
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

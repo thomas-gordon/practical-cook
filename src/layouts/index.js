@@ -8,17 +8,18 @@ class Template extends React.Component {
     return (
       <div className="container">
           <div className="row justify-content-center">
-              <div className="col-6 center page">
+              <div className="col-12 col-sm-8 col-md-6 center page">
                    {children()}
               </div>
           </div>
+
       </div>
     )
   }
 }
 
 Template.propTypes = {
-  children: PropTypes.function,
+  children: PropTypes.func,
   location: PropTypes.object,
   route: PropTypes.object,
 }
