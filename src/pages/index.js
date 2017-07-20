@@ -30,10 +30,11 @@ class BlogIndex extends React.Component {
         return (
             <div>
                 <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
-                <h1 className="text-center">Welcome to Practical Cook!</h1>
+                <h1 className="text-center">Welcome!</h1>
                 <p>Currently in development, this is a place where tips, recipes, equipment guides
-                    and more will be displayed with a focus on Australian home cooking.</p>
-                {/*<p>Our first two articles are on...:</p>
+                    and more will be displayed with a focus on Australian home cooking constrained by a modest sized kitchen.</p>
+
+              {/*<p>Our first two articles are on...:</p>
                 <div className="row flex-row">
                     {pageLinks}
                 </div>*/}
