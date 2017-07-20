@@ -6,8 +6,6 @@ import PropTypes from 'prop-types';
 class ThanksIndex extends React.Component {
     render() {
         console.log("props", this.props)
-
-
         return (
             <div>
                 <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
