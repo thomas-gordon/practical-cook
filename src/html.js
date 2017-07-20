@@ -1,21 +1,22 @@
 import React from "react"
-import PropTypes from "prop-types"
 
-const BUILD_TIME = new Date().getTime()
+let stylesStr
+if (process.env.NODE_ENV === `production`) {
+  try {
+    stylesStr = require(`!raw-loader!../public/styles.css`)
+  } catch (e) {
+    console.log(e)
+  }
+}
 
 export default class HTML extends React.Component {
-  static propTypes = {
-    body: PropTypes.string,
-  }
-
   render() {
     let css
-    if (process.env.NODE_ENV === "production") {
+    if (process.env.NODE_ENV === `production`) {
       css = (
         <style
-          dangerouslySetInnerHTML={{
-            __html: require("!raw!../public/styles.css"),
-          }}
+          id="gatsby-inlined-css"
+          dangerouslySetInnerHTML={{ __html: stylesStr }}
         />
       )
     }
