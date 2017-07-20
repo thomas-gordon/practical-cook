@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 
-import "../css/typography.scss"
+import "../css/styles.scss"
 
 export default class Template extends React.Component {
   static propTypes = {
@@ -20,32 +20,6 @@ export default class Template extends React.Component {
             { name: "keywords", content: "cooking, practical, efficient, organise, recipes" },
           ]}
         />
-        <div
-          style={{
-            background: `rebeccapurple`,
-            marginBottom: `1.45rem`,
-          }}
-        >
-          <div
-            style={{
-              margin: `0 auto`,
-              maxWidth: 960,
-              padding: `1.45rem 1.0875rem`,
-            }}
-          >
-            <h1 style={{ margin: 0 }}>
-              <Link
-                to="/"
-                style={{
-                  color: "white",
-                  textDecoration: "none",
-                }}
-              >
-                Gatsby
-              </Link>
-            </h1>
-          </div>
-        </div>
         <div
           style={{
             margin: `0 auto`,
