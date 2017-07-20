@@ -3,8 +3,13 @@ module.exports = {
     title: `Practical Cook`,
   },
   plugins: [
-    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: `node_modules`
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

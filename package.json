@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Thomas Gordon <thomasgordon02@gmail.com>",
   "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
     "gatsby": "^1.0.1",
     "gatsby-link": "^1.0.1",
     "gatsby-plugin-google-analytics": "^1.0.1",
