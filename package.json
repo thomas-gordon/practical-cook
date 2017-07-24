@@ -28,6 +28,7 @@
     "gatsby-transformer-sharp": "^1.0.0",
     "lodash": "^4.15.0",
     "prop-types": "^15.5.10",
+    "react-facebook": "^4.0.14",
     "typography": "^0.15.8",
     "typography-theme-bootstrap": "^0.15.10"
   },

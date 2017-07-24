@@ -34,6 +34,14 @@ export default class HTML extends React.Component {
           {css}
         </head>
         <body>
+        <div id="fb-root" />
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=320142304756080";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
           <div
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}

@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
             if (post.node.path !== "/404/") {
                 const title = get(post, "node.frontmatter.title") || post.node.path
                 pageLinks.push(
-                    <div className="col-12 col-lg-6">
+                    <div className="col-12 col-lg-6 article-item">
                         <article className="article-link">
                             <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
                                 <header><h2>{post.node.frontmatter.title}</h2></header>
@@ -30,37 +30,10 @@ class BlogIndex extends React.Component {
         return (
             <div>
                 <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
-                <h1 className="text-center">Welcome!</h1>
-                <p>Currently in development, this is a place where tips, recipes, equipment guides
-                    and more will be displayed with a focus on Australian home cooking constrained by a modest sized kitchen.</p>
 
-              {/*<p>Our first two articles are on...:</p>
                 <div className="row flex-row">
                     {pageLinks}
-                </div>*/}
-
-                <hr />
-                <p>If you{"'"}d like to sign up for notification of launch, you can add your email here. We won't
-                    give away your email to <strong>anyone at all.</strong></p>
-
-                <form name="contact" action="thanks" data-netlify>
-                    <div className="row">
-                        <div className="form-group col-12 col-md-6">
-                            <label><strong>Your Name:</strong>
-                                <input type="text" name="name" className="form-control" />
-                            </label>
-                        </div>
-                        <div className="form-group col-12 col-md-6">
-                            <label><strong>Your Email:</strong>
-                                <input type="email" name="email" className="form-control" />
-                            </label>
-                        </div>
-                    </div>
-                    <p>
-                        <button type="submit" className="btn btn-primary">Get updates</button>
-                    </p>
-                </form>
-
+                </div>
             </div>
         )
     }

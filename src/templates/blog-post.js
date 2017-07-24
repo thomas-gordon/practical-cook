@@ -1,6 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import Link from "gatsby-link"
+import FacebookProvider, { Share } from 'react-facebook'
 import get from "lodash/get"
 
 class BlogPostTemplate extends React.Component {
@@ -22,6 +23,11 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <FacebookProvider appId="123456789">
+          <Share href="http://www.facebook.com">
+            <button type="button">Share</button>
+          </Share>
+        </FacebookProvider>
       </div>
     )
   }
@@ -31,7 +37,7 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
-    site {
+    site {.
       siteMetadata {
         title
         author

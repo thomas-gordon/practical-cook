@@ -19,16 +19,55 @@ h1 {
 footer{
     color:#888
 }
+
+.pull-out{
+    position:relative;
+    background:#ffffbc;
+    border-top:1px solid darken(#ffffbc,5%);
+    border-bottom:1px solid darken(#ffffbc,5%);
+    padding:20px 0;
+    margin:1.5em 0;
+    &:before,
+    &:after{
+        right:-9999em;
+        content: " ";
+        background:#ffffbc;
+        left:100%;
+        display:block;
+        position:absolute;
+        top:0;
+        bottom:0;
+        border-top:1px solid darken(#ffffbc,5%);
+        border-bottom:1px solid darken(#ffffbc,5%);
+    }
+    &:after{
+        left:-9999em;
+        right:100%;
+        top:0;
+        bottom:0;
+    }
+    * + * {
+        margin:0;
+    }
+}
+
+.article-item{
+    margin-bottom:30px;
+}
+
+.blog-page{
+
+}
+
 .article-link {
     height:100%;
-    background-color: #434343;
     color: white;
-
     position: relative;
     transition: 0.2s all;
-    margin-bottom:10px;
     a {
+        background-color: #434343;
         height:100%;
+        margin-bottom:30px;
         color: white;
         padding: 20px;
         position: relative;
@@ -37,6 +76,29 @@ footer{
         border: 2px solid #000;
         box-shadow: 3px 3px 0px 0px rgba(97, 97, 97, 0.52);
         transition: 0.2s all;
+        &:after {
+            z-index: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            content: " ";
+            position: absolute;
+            display: block;
+            background-size: 50px 50px;
+            background-image: linear-gradient(
+                            0deg,
+                            transparent 24%,
+                            rgba(255, 255, 255, .05) 25%,
+                            rgba(255, 255, 255, .05) 26%,
+                            transparent 27%,
+                            transparent 74%,
+                            rgba(255, 255, 255, .05) 75%,
+                            rgba(255, 255, 255, .05) 76%,
+                            transparent 77%, transparent),
+            linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+
+    }
         &:hover {
             text-decoration: none;
             transition: 0.2s all;
@@ -45,30 +107,6 @@ footer{
     }
     &:hover {
         transition: 0.2s all;
-
-        background-color: #494949;
     }
-    &:after {
-        z-index: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        content: " ";
-        position: absolute;
-        display: block;
-        background-size: 50px 50px;
-        background-image: linear-gradient(
-                        0deg,
-                        transparent 24%,
-                        rgba(255, 255, 255, .05) 25%,
-                        rgba(255, 255, 255, .05) 26%,
-                        transparent 27%,
-                        transparent 74%,
-                        rgba(255, 255, 255, .05) 75%,
-                        rgba(255, 255, 255, .05) 76%,
-                        transparent 77%, transparent),
-        linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
 
-    }
 }
