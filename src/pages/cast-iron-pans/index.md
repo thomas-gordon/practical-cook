@@ -5,4 +5,6 @@ path: "/cast-iron-pans/"
 subtitle: "Purchasing, seasoning, cleaning, maintenance"
 ---
 
-# They're good though.
+# Frypans in general..
+
+Aren't that amazing really, they're often just a collection of 
