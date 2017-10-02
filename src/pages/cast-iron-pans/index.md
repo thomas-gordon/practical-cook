@@ -5,6 +5,9 @@ path: "/cast-iron-pans/"
 subtitle: "Purchasing, seasoning, cleaning, maintenance"
 ---
 
-# Frypans in general..
+# Frypans..
 
-Aren't that amazing really, they're often just a collection of 
+Are mostly built to fail. Well.. that's not entirely fair. Frypans are built to
+have 
+
+## Seasoning

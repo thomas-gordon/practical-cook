@@ -26,11 +26,9 @@ class BlogIndex extends React.Component {
                 )
             }
         })
-
         return (
             <div>
                 <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
-
                 <div className="row flex-row">
                     {pageLinks}
                 </div>
